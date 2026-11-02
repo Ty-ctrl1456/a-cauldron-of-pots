@@ -88,7 +88,7 @@ public class ModPotions {
     public static final Holder<Potion> LONG_WITHER_POTION = registerPotion("long_wither_potion",
             new Potion("wither_potion", new MobEffectInstance(MobEffects.WITHER, 600)));
 
-    public static final Holder<Potion> BREATH_OF_THE_NAUTILUS_POTION = registerPotion("breath_of_the_nautilus_potion",
+    public static final Holder<Potion> BREATH_OF_THE_NAUTILUS_POTION = registerPotion("breath_of_the_nautilus_potion",//hi
             new Potion("breath_of_the_nautilus_potion", new MobEffectInstance(MobEffects.BREATH_OF_THE_NAUTILUS, 1800)));
     public static final Holder<Potion> LONG_BREATH_OF_THE_NAUTILUS_POTION = registerPotion("long_breath_of_the_nautilus_potion",
             new Potion("breath_of_the_nautilus_potion", new MobEffectInstance(MobEffects.BREATH_OF_THE_NAUTILUS, 9600)));
