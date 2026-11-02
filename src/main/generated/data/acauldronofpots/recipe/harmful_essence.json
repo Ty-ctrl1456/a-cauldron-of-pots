@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essences",
+  "key": {
+    "1": "minecraft:slime_block",
+    "2": "minecraft:spider_eye",
+    "3": "minecraft:fermented_spider_eye",
+    "4": "minecraft:rotten_flesh",
+    "5": "minecraft:wither_skeleton_skull",
+    "6": "minecraft:stone",
+    "7": "acauldronofpots:lightning_essence",
+    "8": "minecraft:creeper_head",
+    "9": "minecraft:shulker_shell"
+  },
+  "pattern": [
+    "123",
+    "456",
+    "789"
+  ],
+  "result": {
+    "id": "acauldronofpots:harmful_essence"
+  }
+}

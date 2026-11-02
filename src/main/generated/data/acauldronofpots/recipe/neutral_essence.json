@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essences",
+  "key": {
+    "1": "minecraft:glowstone",
+    "2": "minecraft:ominous_bottle",
+    "3": "minecraft:ominous_trial_key",
+    "4": "minecraft:crossbow",
+    "5": "minecraft:totem_of_undying",
+    "6": "minecraft:copper_ingot",
+    "7": "minecraft:glowstone_dust",
+    "8": "minecraft:milk_bucket",
+    "9": "minecraft:trial_key"
+  },
+  "pattern": [
+    "123",
+    "456",
+    "789"
+  ],
+  "result": {
+    "id": "acauldronofpots:neutral_essence"
+  }
+}

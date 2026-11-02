@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_every_effect_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "acauldronofpots:every_effect_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "acauldronofpots:null_essence"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_every_effect_essence"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "acauldronofpots:null_essence"
+    ]
+  }
+}
