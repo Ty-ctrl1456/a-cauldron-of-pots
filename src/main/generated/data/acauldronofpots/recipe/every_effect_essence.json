@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "essences",
-  "key": {
-    "1": "acauldronofpots:beneficial_essence",
-    "2": "acauldronofpots:neutral_essence",
-    "3": "acauldronofpots:harmful_essence",
-    "4": "minecraft:glass_bottle"
-  },
-  "pattern": [
-    "121",
-    "444",
-    "323"
+  "ingredients": [
+    "acauldronofpots:beneficial_essence",
+    "acauldronofpots:beneficial_essence",
+    "acauldronofpots:beneficial_essence",
+    "acauldronofpots:neutral_essence",
+    "acauldronofpots:neutral_essence",
+    "acauldronofpots:neutral_essence",
+    "acauldronofpots:harmful_essence",
+    "acauldronofpots:harmful_essence",
+    "acauldronofpots:harmful_essence"
   ],
   "result": {
     "id": "acauldronofpots:every_effect_essence"
