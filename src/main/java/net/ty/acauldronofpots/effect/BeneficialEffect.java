@@ -16,35 +16,35 @@ public class BeneficialEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(ServerLevel serverLevel, LivingEntity mob, int amplification) {
-        mob.addEffect(new MobEffectInstance(ModEffects.IMMUNE, 1200));
-        mob.addEffect(new MobEffectInstance(ModEffects.EMISSIVE_HEALING, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.BREATH_OF_THE_NAUTILUS, 1200));;
-        mob.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.HASTE, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.INSTANT_HEALTH, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.LUCK, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.SATURATION, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.SPEED, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 1200));
-        mob.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 1200));
+        mob.addEffect(new MobEffectInstance(ModEffects.IMMUNE, 400));
+        mob.addEffect(new MobEffectInstance(ModEffects.EMISSIVE_HEALING, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.BREATH_OF_THE_NAUTILUS, 400));;
+        mob.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.HASTE, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.INSTANT_HEALTH, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.LUCK, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.SATURATION, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.SPEED, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 400));
+        mob.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 400));
 
         return super.applyEffectTick(serverLevel, mob, amplification);
     }
 
     @Override
     public boolean shouldApplyEffectTickThisTick(int tickCount, int amplification) {
-        int interval = 300 >> amplification;
+        int interval = 20 >> amplification;
         if (interval > 0) {
             return tickCount % interval == 0;
         } else {

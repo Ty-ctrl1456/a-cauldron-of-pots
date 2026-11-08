@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "acauldronofpots:block/four_leaf_clover_crop_stage3"
+  }
+}

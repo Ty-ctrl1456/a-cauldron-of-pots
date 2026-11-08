@@ -156,5 +156,10 @@
   "item.acauldronofpots.beneficial_essence": "Beneficial Essence",
   "item.acauldronofpots.every_effect_essence": "Every Effect Essence",
   "item.acauldronofpots.null_essence": "Null Essence",
-  "item.acauldronofpots.four_leaf_clover": "Four Leaf Clover"
+  "item.acauldronofpots.four_leaf_clover": "Four Leaf Clover",
+  "item.acauldronofpots.four_leaf_clover_seeds": "Four Leaf Clover Seeds",
+  "item.acauldronofpots.four_leaf_clover_sprout": "Four Leaf Clover Sprout",
+
+  "block.acauldronofpots.four_leaf_clover_crop": "Four Leaf Clover Crop",
+  "block.acauldronofpots.four_leaf_clover_sprout_crop": "Four Leaf Clover Sprout Crop"
 }

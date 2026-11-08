@@ -31,6 +31,8 @@ public class ModLootTableModifiers {
         if (key.identifier().equals(Identifier.withDefaultNamespace("blocks/tall_grass"))) {
             LootPool.Builder poolBuilder = LootPool.lootPool()
                     .setRolls(ContextIntProviders.exactly(1))
+                    .when(LootItemRandomChanceCondition.randomChance(1f))
+                    .add(LootItem.lootTableItem(ModItems.FOUR_LEAF_CLOVER_SEEDS))
                     .when(LootItemRandomChanceCondition.randomChance(0.04f))
                     .add(LootItem.lootTableItem(ModItems.FOUR_LEAF_CLOVER))
                     .apply(SetItemCountFunction.setCount(ContextIntProviders.between(1, 2)).build());
@@ -41,6 +43,8 @@ public class ModLootTableModifiers {
         if (key.identifier().equals(Identifier.withDefaultNamespace("blocks/tall_dry_grass"))) {
             LootPool.Builder poolBuilder = LootPool.lootPool()
                     .setRolls(ContextIntProviders.exactly(1))
+                    .when(LootItemRandomChanceCondition.randomChance(1f))
+                    .add(LootItem.lootTableItem(ModItems.FOUR_LEAF_CLOVER_SEEDS))
                     .when(LootItemRandomChanceCondition.randomChance(0.06f))
                     .add(LootItem.lootTableItem(ModItems.FOUR_LEAF_CLOVER))
                     .apply(SetItemCountFunction.setCount(ContextIntProviders.between(2, 2)).build());
@@ -51,6 +55,8 @@ public class ModLootTableModifiers {
         if (key.identifier().equals(Identifier.withDefaultNamespace("blocks/short_grass"))) {
             LootPool.Builder poolBuilder = LootPool.lootPool()
                     .setRolls(ContextIntProviders.exactly(1))
+                    .when(LootItemRandomChanceCondition.randomChance(1f))
+                    .add(LootItem.lootTableItem(ModItems.FOUR_LEAF_CLOVER_SEEDS))
                     .when(LootItemRandomChanceCondition.randomChance(0.02f))
                     .add(LootItem.lootTableItem(ModItems.FOUR_LEAF_CLOVER))
                     .apply(SetItemCountFunction.setCount(ContextIntProviders.between(1, 1)).build());
@@ -61,6 +67,8 @@ public class ModLootTableModifiers {
         if (key.identifier().equals(Identifier.withDefaultNamespace("blocks/short_dry_grass"))) {
             LootPool.Builder poolBuilder = LootPool.lootPool()
                     .setRolls(ContextIntProviders.exactly(1))
+                    .when(LootItemRandomChanceCondition.randomChance(1f))
+                    .add(LootItem.lootTableItem(ModItems.FOUR_LEAF_CLOVER_SEEDS))
                     .when(LootItemRandomChanceCondition.randomChance(0.05f))
                     .add(LootItem.lootTableItem(ModItems.FOUR_LEAF_CLOVER))
                     .apply(SetItemCountFunction.setCount(ContextIntProviders.between(1, 2)).build());

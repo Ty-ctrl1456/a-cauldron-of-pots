@@ -12,18 +12,32 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.ty.acauldronofpots.ACauldronOfPots;
+import net.ty.acauldronofpots.block.ModBlocks;
+import net.ty.acauldronofpots.food.ModFoods;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class ModItems {
-    public static final Item LIGHTNING_ESSENCE = registerItem("lightning_essence", Item::new);
-    public static final Item BENEFICIAL_ESSENCE = registerItem("beneficial_essence", Item::new);
-    public static final Item HARMFUL_ESSENCE = registerItem("harmful_essence", Item::new);
-    public static final Item NEUTRAL_ESSENCE = registerItem("neutral_essence", Item::new);
-    public static final Item EVERY_EFFECT_ESSENCE = registerItem("every_effect_essence", Item::new);
-    public static final Item NULL_ESSENCE = registerItem("null_essence", Item::new);
+    public static final Item LIGHTNING_ESSENCE = registerItem("lightning_essence", properties -> new Item(properties
+            .food(ModFoods.LIGHTNING_ESSENCE, ModFoods.LIGHTNING_ESSENCE_CONSUMABLE)));
+    public static final Item BENEFICIAL_ESSENCE = registerItem("beneficial_essence", properties -> new Item(properties
+            .food(ModFoods.BENEFICIAL_ESSENCE, ModFoods.BENEFICIAL_ESSENCE_CONSUMABLE)));
+    public static final Item HARMFUL_ESSENCE = registerItem("harmful_essence", properties -> new Item(properties
+            .food(ModFoods.HARMFUL_ESSENCE, ModFoods.HARMFUL_ESSENCE_CONSUMABLE)));
+    public static final Item NEUTRAL_ESSENCE = registerItem("neutral_essence", properties -> new Item(properties
+            .food(ModFoods.NEUTRAL_ESSENCE, ModFoods.NEUTRAL_ESSENCE_CONSUMABLE)));
+    public static final Item EVERY_EFFECT_ESSENCE = registerItem("every_effect_essence", properties -> new Item(properties
+            .food(ModFoods.EVERY_EFFECT_ESSENCE, ModFoods.EVERY_EFFECT_ESSENCE_CONSUMABLE)));
+    public static final Item NULL_ESSENCE = registerItem("null_essence", properties -> new Item(properties
+            .food(ModFoods.NULL_ESSENCE, ModFoods.NULL_ESSENCE_CONSUMABLE)));
+
     public static final Item FOUR_LEAF_CLOVER = registerItem("four_leaf_clover", Item::new);
+
+    public static final Item FOUR_LEAF_CLOVER_SEEDS = registerItem("four_leaf_clover_seeds",
+            properties -> new PlaceOnWaterBlockItem(ModBlocks.FOUR_LEAF_CLOVER_SPROUT_CROP, properties.useItemDescriptionPrefix()));
+    public static final Item FOUR_LEAF_CLOVER_SPROUT = registerItem("four_leaf_clover_sprout",
+            properties -> new BlockItem(ModBlocks.FOUR_LEAF_CLOVER_CROP, properties.useItemDescriptionPrefix()));
 
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();
@@ -45,6 +59,10 @@ public class ModItems {
             output.accept(EVERY_EFFECT_ESSENCE);
             output.accept(NULL_ESSENCE);
             output.accept(FOUR_LEAF_CLOVER);
+        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
+            output.accept(FOUR_LEAF_CLOVER_SEEDS);
+            output.accept(FOUR_LEAF_CLOVER_SPROUT);
         });
     }
 }

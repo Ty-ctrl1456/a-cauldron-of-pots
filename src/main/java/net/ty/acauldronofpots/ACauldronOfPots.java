@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 
+import net.ty.acauldronofpots.block.ModBlocks;
 import net.ty.acauldronofpots.effect.ModEffects;
 import net.ty.acauldronofpots.item.ModItems;
 import net.ty.acauldronofpots.loot.ModLootTableModifiers;
@@ -18,6 +19,7 @@ public class ACauldronOfPots implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		ModEffects.registerEffects();
 
